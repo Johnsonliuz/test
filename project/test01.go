@@ -18,4 +18,3 @@ func main() {
 		fmt.Println("多練幾年再來")
 	}
 }
-//事實上
