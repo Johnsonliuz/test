@@ -8,7 +8,7 @@ import "fmt"
 func main() {
 	var score int
 	
-	fmt.Println("請輸入成績")
+	fmt.Println("請輸入成績：")
 	fmt.Scanf("%d", &score)
 	
 	switch int(score/60){
