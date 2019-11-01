@@ -7,9 +7,9 @@ import "fmt"
 
 func main() {
 	var i int = 1
-	var sum int
-	var count int
-	var max int
+	var sum int = 0
+	var count int = 0
+	var max int = 0
 	for ; i <= max; i++ {
 		if (i % 9) == 0 {
 		count++
