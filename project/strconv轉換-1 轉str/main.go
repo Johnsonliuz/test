@@ -1,4 +1,4 @@
-//½m²ß
+//ç·´ç¿’
 package main
 
 import  "fmt"
@@ -9,7 +9,7 @@ var num3 int = 99
 var num4 float64 = 23.456
 var b2 bool = true
 
-//¥ÎstrconvÂà´«¦¨str«¬ºA
+//ç”¨strconvè½‰æ›æˆstrå‹æ…‹
  
 }
 
@@ -19,7 +19,20 @@ var b2 bool = true
 
 
 
-¸Ñµª
+//è§£ç­”-------------
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 package main
 
 import  (
@@ -34,22 +47,22 @@ var b2 bool = true
 var a string
 var b string
 var c string
-//¥ÎstrconvÂà´«¦¨str«¬ºA
+//ç”¨strconvè½‰æ›æˆstrå‹æ…‹
 
 a = fmt.Sprintf("%d",num3)
-fmt.Printf("a=%q a«¬ºA=%T\n",a,a)
+fmt.Printf("a=%q aå‹æ…‹=%T\n",a,a)
 b = fmt.Sprintf("%f",num4)
-fmt.Printf("b=%q b«¬ºA=%T\n",b,b)
+fmt.Printf("b=%q bå‹æ…‹=%T\n",b,b)
 c = fmt.Sprintf("%t",b2)
-fmt.Printf("c=%q str«¬ºA=%T\n",c,c)
+fmt.Printf("c=%q strå‹æ…‹=%T\n",c,c)
 
 
 a = strconv.FormatInt(int64(num3),10)
-fmt.Printf("a=%q a«¬ºA=%T\n",a,a)
+fmt.Printf("a=%q aå‹æ…‹=%T\n",a,a)
 b = strconv.FormatFloat(num4,'f',10,64)
-fmt.Printf("b=%q b«¬ºA=%T\n",b,b)
+fmt.Printf("b=%q bå‹æ…‹=%T\n",b,b)
 c = strconv.FormatBool(b2)
-fmt.Printf("c=%q str«¬ºA=%T\n",c,c)
+fmt.Printf("c=%q strå‹æ…‹=%T\n",c,c)
 
  
 }

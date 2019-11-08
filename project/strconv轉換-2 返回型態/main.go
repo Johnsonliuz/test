@@ -1,4 +1,4 @@
-//½m²ß
+//ç·´ç¿’
 package main
 
 import "fmt"
@@ -11,11 +11,28 @@ func main() {
     var n2 int
     var str3 string = "123.456"
     var n3 float64 
-    //½Ğ¥ÎstrconvÂà´«¦^¦U¦Û«¬ºA
+    //è«‹ç”¨strconvè½‰æ›å›å„è‡ªå‹æ…‹
 }
 
 
-¸Ñµª
+//è§£ç­”--------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 package main
 
 import (
@@ -28,16 +45,16 @@ func main() {
     var b bool
     var str2 string = "1234590"
     var n1 int64
-    var n2 int    //­n´«¦¨intÃş«¬
+    var n2 int    //Â­è¦æ›æˆintå‹æ…‹
     var str3 string = "123.456"
     var n3 float64 
-    //½Ğ¥ÎstrconvÂà´«¦^¦U¦Û«¬ºA
+    //è«‹ç”¨strconvè½‰æ›å›å„è‡ªå‹æ…‹
 
     b, _ = strconv.ParseBool(str)
-    fmt.Printf("b=%t b«¬ºA=%T\n",b,b)
+    fmt.Printf("b=%t bå‹æ…‹=%T\n",b,b)
     n1, _ = strconv.ParseInt(str2,10,64)
     n2 = int(n1)
-    fmt.Printf("n2=%v n2«¬ºA=%T\n",n2,n2)
+    fmt.Printf("n2=%v n2å‹æ…‹=%T\n",n2,n2)
     n3, _ = strconv.ParseFloat(str3,64)
-    fmt.Printf("n3=%f n3«¬ºA=%T\n",n3,n3) 
+    fmt.Printf("n3=%f n3å‹æ…‹=%T\n",n3,n3) 
 }

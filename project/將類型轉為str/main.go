@@ -9,6 +9,6 @@ func main() {
 	var mychar byte = 'h'
 	var str string 
 
-	//±N¨äÂà¦¨string«¬ºA
+	//å°‡å…¶è½‰æˆstringå‹æ…‹
 	
 }
