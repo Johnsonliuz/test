@@ -5,13 +5,13 @@ import fmt
 
 func main() {
 	var a int = 300
-	var ptr *int = a ¿ù¦b­þ¦p¦ó­×¥¿
+	var ptr *int = a //錯在哪？如何修正
 
 }
 
 func main() {
 	var a int = 300
-	var ptr float32 = &a¿ù¦b­þ¦p¦ó­×¥¿
+	var ptr float32 = &a //錯在哪？如何修正
 }
 
 func main() {
@@ -22,12 +22,22 @@ func main() {
 	ptr = &b
 	ptr = 200 b=
 	fmt.Printf(a=%d,b=%d,ptr=%d,a,b,ptr)
-	¿é¥X¤°»ò¤º®e
+	//輸出什麼內容
 }
 
 
 
+//解答-------------------
 
+
+
+
+
+
+
+
+
+/*
 package main
 
 import "fmt"
@@ -46,4 +56,4 @@ func main() {
 
 	fmt.Printf("a=%d,ptr=%v",a,ptr)
 
-}
+}*/
