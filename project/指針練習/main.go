@@ -1,17 +1,17 @@
-//½m²ß
+//ç·´ç¿’
 package main
 
 import fmt
 
 func main() {
 	var a int = 300
-	var ptr *int = a ¿ù¦b­þ¦p¦ó­×¥¿
+	var ptr *int = a Â¿Ã¹Â¦bÂ­Ã¾Â¦pÂ¦Ã³Â­Ã—Â¥Â¿
 
 }
 
 func main() {
 	var a int = 300
-	var ptr float32 = &a¿ù¦b­þ¦p¦ó­×¥¿
+	var ptr float32 = &aÂ¿Ã¹Â¦bÂ­Ã¾Â¦pÂ¦Ã³Â­Ã—Â¥Â¿
 }
 
 func main() {
@@ -22,12 +22,12 @@ func main() {
 	ptr = &b
 	ptr = 200 b=
 	fmt.Printf(a=%d,b=%d,ptr=%d,a,b,ptr)
-	¿é¥X¤°»ò¤º®e
+	Â¿Ã©Â¥XÂ¤Â°Â»Ã²Â¤ÂºÂ®e
 }
 
 
 
-¸Ñµª
+
 package main
 
 import "fmt"
@@ -42,7 +42,7 @@ func main() {
 
 func main() {
 	var a int = 300
-	var ptr *int = &a  //¿ù¦b­þ¦p¦ó­×¥¿
+	var ptr *int = &a  //Â¿Ã¹Â¦bÂ­Ã¾Â¦pÂ¦Ã³Â­Ã—Â¥Â¿
 
 	fmt.Printf("a=%d,ptr=%v",a,ptr)
 
