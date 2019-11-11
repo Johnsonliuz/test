@@ -49,7 +49,7 @@ func main() {
 	c = (a - 100*b) / 10
 	d = (a - 100*b - 10*c) / 1 
 	
-	if a = b*b*b+c*c*c+d*d*d && a = 100*b+10*c+1*d {
+	if a == b*b*b+c*c*c+d*d*d && a == 100*b+10*c+1*d {
 		fmt.Println("是水仙花數")
 	} else {
 		fmt.Println("不是水仙花數")
@@ -81,7 +81,7 @@ func main() {
 	fmt.Println("請輸入一個密碼：")
 	fmt.Scanf("%d",&f)
 	
-	if e == '張三' {
+	if e == "張三" {
 		if f == 1234 {
 			fmt.Println("登入成功")
 		} else {
@@ -114,13 +114,13 @@ func main() {
 	fmt.Println("請輸入一個身高：")
 	fmt.Scanf("%d",&a)
 	fmt.Println("請輸入一個體重：")
-	fmt.Scanf("%d",&b）
+	fmt.Scanf("%d",&b)
 	
-	if (a - 108) * 2 <= b + 5 && (a - 108) * 2 => b - 5{
+	if (a - 108) * 2 <= b + 5 && (a - 108) * 2 >= b - 5{
 		fmt.Println("體重合適")
 	} else if (a - 108) * 2 < b - 5 {
 		fmt.Println("體重過輕")
-	} eles if (a - 108) * 2 > b + 5 {
+	} else if (a - 108) * 2 > b + 5 {
 		fmt.Println("體重過重")
 	}
 	
@@ -191,8 +191,10 @@ func main() {
 				fmt.Println("%d,%d,%d",a,b,c)
 			} else {
 				fmt.Println("%d,%d,%d",b,a,c)
+			}
 		} else {
-		fmt.Println("%d,%d,%d",b,c,a)
+			fmt.Println("%d,%d,%d",b,c,a)
+		}
 	} else if c < a {
 		if b < a {
 			if c < b {
