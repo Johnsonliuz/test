@@ -77,7 +77,7 @@ func main() {
 	//保存用戶名和密碼，判斷用戶是否為張三，密碼是否為1234，如果是則提示登入成功，不是則提示登入失敗
 	
 	fmt.Println("請輸入一個用戶名：")
-	fmt.Scanf("%d",&e)
+	fmt.Scanf("%s",&e)
 	fmt.Println("請輸入一個密碼：")
 	fmt.Scanf("%d",&f)
 	
@@ -87,7 +87,7 @@ func main() {
 		} else {
 			fmt.Println("登入失敗")
 		}
-	} else {
+	} else if e != "張三" {
 		if f == 1234 {
 			fmt.Println("登入失敗")
 		} else {
