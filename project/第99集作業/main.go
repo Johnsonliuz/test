@@ -31,9 +31,9 @@ func main() {
 	fmt.Scanf("%d",&a)
 	
 	if a % 4 == 0 {
-		fmt.Printf("%d是閏年",a)
+		fmt.Printf("%d是閏年\n",a)
 	} else {
-		fmt.Printf("%d不是閏年",a)
+		fmt.Printf("%d不是閏年\n",a)
 	}
 	
 	fmt.Println("------------------")
@@ -87,6 +87,12 @@ func main() {
 		} else {
 			fmt.Println("登入失敗")
 		}
+	} else {
+		if f == 1234 {
+			fmt.Println("登入失敗")
+		} else {
+			fmt.Println("登入失敗")
+		}
 	}
 	
 	fmt.Println("------------------")
@@ -133,15 +139,15 @@ func main() {
 	fmt.Scanf("%d",&a)
 	
 	switch {
-		case a => 90 && a <= 100:
+		case a >= 90 && a <= 100:
 		fmt.Println("優秀")
-		case a => 80 && a <= 89:
+		case a >= 80 && a <= 89:
 		fmt.Println("優良")
-		case a => 70 && a <= 79:
+		case a >= 70 && a <= 79:
 		fmt.Println("良好")
-		case a => 60 && a <= 69:
+		case a >= 60 && a <= 69:
 		fmt.Println("及格")
-		case a < 60 && a => 0:
+		case a < 60 && a >= 0:
 		fmt.Println("不及格")
 		case a < 0:
 		fmt.Println("輸入錯誤")
@@ -178,32 +184,32 @@ func main() {
 	if a < b {
 		if a < c {
 			if b < c {
-				fmt.Printf("%d,%d,%d",a,b,c)
+				fmt.Printf("%d,%d,%d\n",a,b,c)
 			} else {
-				fmt.Printf("%d,%d,%d",a,c,b)
+				fmt.Printf("%d,%d,%d\n",a,c,b)
 			}
 		} else {
-			fmt.Printf("%d,%d,%d",c,a,b)
+			fmt.Printf("%d,%d,%d\n",c,a,b)
 		}
 	} else if b < c {
 		if a < c {
 			if a < b {
-				fmt.Printf("%d,%d,%d",a,b,c)
+				fmt.Printf("%d,%d,%d\n",a,b,c)
 			} else {
-				fmt.Printf("%d,%d,%d",b,a,c)
+				fmt.Printf("%d,%d,%d\n",b,a,c)
 			}
 		} else {
-			fmt.Printf("%d,%d,%d",b,c,a)
+			fmt.Printf("%d,%d,%d\n",b,c,a)
 		}
 	} else if c < a {
 		if b < a {
 			if c < b {
-				fmt.Printf("%d,%d,%d",c,b,a)
+				fmt.Printf("%d,%d,%d\n",c,b,a)
 			} else {
-				fmt.Printf("%d,%d,%d",b,c,a)
+				fmt.Printf("%d,%d,%d\n",b,c,a)
 			}
 		} else {
-			fmt.Printf("%d,%d,%d",c,a,b)
+			fmt.Printf("%d,%d,%d\n",c,a,b)
 		}
 	}
 	
