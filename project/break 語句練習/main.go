@@ -1,5 +1,3 @@
-
-
 package main
 
 import (
@@ -34,6 +32,7 @@ func main() {
 	//寫一個登入驗證，有三次機會，帳號為張三豐，密碼為888，正確則提示登入成功，錯誤則提示還有幾次機會
 	
 	
+	a = 3
 	
 	for i :=1; i <= 3; i++{
 	
@@ -46,7 +45,11 @@ func main() {
 			fmt.Println("登入成功")
 			break
 		} else {
-			fmt.Printf("登入失敗，還有%v次機會\n",3-i)
+		a--
+			fmt.Printf("登入失敗，還有%v次機會\n",a)
+		}
+		if a == 0 {
+			fmt.Println("帳號已鎖定")
 		}
 	}
 }
