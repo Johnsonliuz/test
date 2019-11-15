@@ -6,13 +6,13 @@ import "fmt"
 
 func cal(a float64,b float64,operator string)(res float64){
 		switch operator{
-			case '+':
+			case "+":
 			res = a + b
-			case '-':
+			case "-":
 			res = a - b
-			case '*':
+			case "*":
 			res = a * b
-			case '/':
+			case "/":
 			res = a / b
 			default:
 			fmt.Println("輸入錯誤")
