@@ -17,6 +17,6 @@ func main() {
 	fmt.Println("請輸入第二個數：")
 	fmt.Scanf("%v",&b)
 		
-	res = Utils.Cal(a,b,operator)
+	res = utils.Cal(a,b,operator)
 	fmt.Printf("運算結果=%v\n",res)
 }
