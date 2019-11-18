@@ -4,7 +4,7 @@ package main
 
 import (
 	"fmt"
-	"goproject/ch6/111/utils"
+	"goproject/ch6/1/utils"
 )
 	
 func main() {
@@ -14,11 +14,11 @@ func main() {
 	var operator string
 	
 	fmt.Println("請輸入第一個數：")
-	fmt.Scanf("%v",&a)
+	fmt.Scanln(&a)
 	fmt.Println("請輸入運算符：")
-	fmt.Scanf("%s",&operator)
+	fmt.Scanln(&operator)
 	fmt.Println("請輸入第二個數：")
-	fmt.Scanf("%v",&b)
+	fmt.Scanln(&b)
 		
 	res = utils.Cal(a,b,operator)
 	fmt.Printf("運算結果=%v\n",res)

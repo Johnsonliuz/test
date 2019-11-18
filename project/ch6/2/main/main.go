@@ -2,9 +2,12 @@
 
 package main
 
-import "fmt"
+import （
+	"fmt"
+	"goproject/ch6/2/utils"
+)
 
-fnuc main() {
+func main() {
 	var a int
 	var b int
 	
