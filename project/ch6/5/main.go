@@ -13,7 +13,9 @@ package main
 import "fmt"
 
 func f(n int)(a int){
-	if n == 10{
+	if n < 1 || n > 10{
+		fmt.Println("輸入天數有誤")
+	} else if n == 10{
 		a = 1
 	} else {
 		a = (f(n+1)+1)*2
@@ -22,8 +24,12 @@ func f(n int)(a int){
 }
 
 func main() {
-	var a int
-	a = f(1)
 	
+	var a int
+	
+	fmt.Println("請輸入天數：")
+	fmt.Scanln(&a)
+	
+	a = f(a)
 	fmt.Println(a)
 }
