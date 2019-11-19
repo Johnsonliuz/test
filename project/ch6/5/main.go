@@ -20,7 +20,7 @@ func f(n int)(a int){
 	} else {
 		a = (f(n+1)+1)*2
 	}
-	return a
+	return
 }
 
 func main() {

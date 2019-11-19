@@ -10,7 +10,7 @@ func f(n int)(a int){
 	} else {
 		a = 2 * f(n - 1 ) + 1
 	}
-	return a
+	return
 }
 
 func main() {
