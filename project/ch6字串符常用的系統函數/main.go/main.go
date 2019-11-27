@@ -9,7 +9,7 @@ import (
 func main() {
 	
 	//統計字串符長度 len(str)
-	str := Johnson
+	str := "Johnson"
 	fmt.Println("str長度：",len(str))
 	
 	//切片字串符內含有中文出現亂碼 r:=[]rune(str)
@@ -50,14 +50,14 @@ func main() {
 	fmt.Printf("是否有在seafood裡面：%v\n",str4)
 	
 	//統計字串裡出現過多少次子串 strings.Count("cheese","ee") //1
-	num := string.Count("cheese","ee")
+	num := strings.Count("cheese","ee")
 	fmt.Printf("num=%v\n",num)
 	
 	//不分大小寫判斷字母是否一樣 fmt.Println(string.EqualFold("abc","ABc")) //true
-	b := string.EqualFold("abc","ABc")
+	b := strings.EqualFold("abc","ABc")
 	fmt.Printf("是否一樣:%v\n",b)
 	
-	fnt.Printf("abc是否等於ABc:%v\n",abc == ABc)
+	fmt.Printf("abc是否等於ABc:%v\n","abc" == "ABc")
 	
 	//返回子串在字符第一次出現的index值，如果沒有則返回-1 strings.Index("NLT_abcabcabc","abc")
 	index := strings.Index("NLT_abcabcabc","abc")
@@ -70,25 +70,25 @@ func main() {
 	//將指定的子串替換成另外一個子串 strings.Replace("go go hello","嗨嗨",n)n可以指定替換幾個，-1則全部替換
 	str2 = "go go hello"
 	str = strings.Replace(str2,"go","嗨嗨",-1)
-	fmt.Printf("str=%v str2=%v\n",str,str2)
+	fmt.Printf("str=%v, str2=%v\n",str,str2)
 	
 	//按照指定的某個字符，為分割標示，將一個字符拆分成字符串數組 strings.Split("hello,wrold,ok",",")
 	strArr := strings.Split("hello,world,ok",",")
 	for i := 0; i < len(strArr); i++{
-		fmt.Printf("str[%v]\n",i,strArr[i])
+		fmt.Printf("str[%v]=%v\n",i,strArr[i])
 	}
-	fmt.Orintf("strArr=%v\n",strArr)
+	fmt.Printf("strArr=%v\n",strArr)
 	
 	//將字符串的字母進行大小寫轉換 strings.ToLower("Go")// go strings.ToUpper("Go")//GO
 	str = "goLang Hello"
 	str = strings.ToLower(str)
-	fmt.Printf("str轉變結果:%v",str)
-	srr = strings.Upper(str)
+	fmt.Printf("str轉變結果:%v\n",str)
+	str = strings.ToUpper(str)
 	fmt.Printf("str轉變結果：%v\n",str)
 	
 	//將字符串的左右兩邊的空格去掉 strings.TrimSpace(" tn a lone gopher ntrn ")
 	str = strings.TrimSpace(" tn a long gopher ntrn ")
-	fmt.Printf("str:%v\n",sre)
+	fmt.Printf("str:%v\n",str)
 	
 	//將字符串左右兩邊的指定字符去掉 strings.Trim("!hello!","!")
 	str = strings.Trim("!hello!","!")
