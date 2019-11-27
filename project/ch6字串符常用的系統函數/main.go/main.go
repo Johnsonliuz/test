@@ -47,8 +47,64 @@ func main() {
 	
 	//找查子串是否有在字串之中 strings.Contains("seafood","sea") //true
 	str4 := strings.Contains("seafood","sea") //true
-	fmt.Printf("是否有在seafood裡面：%v",str4)
+	fmt.Printf("是否有在seafood裡面：%v\n",str4)
 	
-	//
+	//統計字串裡出現過多少次子串 strings.Count("cheese","ee") //1
+	num := string.Count("cheese","ee")
+	fmt.Printf("num=%v\n",num)
 	
+	//不分大小寫判斷字母是否一樣 fmt.Println(string.EqualFold("abc","ABc")) //true
+	b := string.EqualFold("abc","ABc")
+	fmt.Printf("是否一樣:%v\n",b)
+	
+	fnt.Printf("abc是否等於ABc:%v\n",abc == ABc)
+	
+	//返回子串在字符第一次出現的index值，如果沒有則返回-1 strings.Index("NLT_abcabcabc","abc")
+	index := strings.Index("NLT_abcabcabc","abc")
+	fmt.Printf("index=%v\n",index)
+	
+	//返回子串在字符最後一次出現的index值，如果沒有則返回-1 strings.LastIndex("go golang","go")
+	index = strings.LastIndex("go golang","go")
+	fmt.Printf("index=%v\n",index)
+	
+	//將指定的子串替換成另外一個子串 strings.Replace("go go hello","嗨嗨",n)n可以指定替換幾個，-1則全部替換
+	str2 = "go go hello"
+	str = strings.Replace(str2,"go","嗨嗨",-1)
+	fmt.Printf("str=%v str2=%v\n",str,str2)
+	
+	//按照指定的某個字符，為分割標示，將一個字符拆分成字符串數組 strings.Split("hello,wrold,ok",",")
+	strArr := strings.Split("hello,world,ok",",")
+	for i := 0; i < len(strArr); i++{
+		fmt.Printf("str[%v]\n",i,strArr[i])
+	}
+	fmt.Orintf("strArr=%v\n",strArr)
+	
+	//將字符串的字母進行大小寫轉換 strings.ToLower("Go")// go strings.ToUpper("Go")//GO
+	str = "goLang Hello"
+	str = strings.ToLower(str)
+	fmt.Printf("str轉變結果:%v",str)
+	srr = strings.Upper(str)
+	fmt.Printf("str轉變結果：%v\n",str)
+	
+	//將字符串的左右兩邊的空格去掉 strings.TrimSpace(" tn a lone gopher ntrn ")
+	str = strings.TrimSpace(" tn a long gopher ntrn ")
+	fmt.Printf("str:%v\n",sre)
+	
+	//將字符串左右兩邊的指定字符去掉 strings.Trim("!hello!","!")
+	str = strings.Trim("!hello!","!")
+	fmt.Printf("str:%v\n",str)
+	
+	//將字符串左邊的指定字符去掉 strings.TrimLeft("!hello!","!")
+	str = strings.TrimLeft("!hello!","!")
+	fmt.Printf("str:%v\n",str)
+	
+	//將字符串右邊的指定字符去掉 strings.TrimRight("!hello!","!")
+	str = strings.TrimRight("!hello!","!")
+	fmt.Printf("str:%v\n",str)
+	
+	//判斷字符串是否以指定的字符串開頭 strings.HasPrefix("ftp://192.168.0.1","ftp") //true
+	b =  strings.HasPrefix("ftp://192.168.0.1","ftp")
+	fmt.Printf("b=%v\n",b)
+	
+	//判斷字符串是否以指定的字符串結尾 strings.HasSuffix("NLT_abc.jpg","abc") //false
 }
