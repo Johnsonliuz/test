@@ -170,7 +170,7 @@ a,b
 
 	fmt.Println("請輸入月份：")
 	fmt.Scanln(&a)
-	switch{
+	switch {
 		case 3,4,5:
 		fmt.Println("春")
 		case 6,7,8:
@@ -179,50 +179,121 @@ a,b
 		fmt.Println("秋")
 		case 12,1,2:
 		fmt.Println("冬")
-	
 	}
 
 
 //練習
 //用for循環寫出"你好,冠陞"
+	for i :=1; i<= 10; i++{
+		fmt.Println("你好，冠陞")
+	}
 
 
 //練習
 //請打印出1~100所有9的倍數的整數各數及總和
-
+	for i :=1; i <= 100;i++{
+		if i % 9 {
+			fmt.Println(i)
+		}
+		a = 0
+		a += i
+	}
 
 //練習
 //試著寫出0 + 6 = 6 , 1 + 5 = 6依序往下打印出來,6是可變的
+	a = 6
+	for i := 0; i <=a; i++{
+		fmt.Printf("%v+%v=%v",i,a-i,a)
+	}
 
 //練習
 //有三個班，每班有五個學生，求每個班的平均分數及總平均分數
 //學生成績用手動輸入
 //統計三個班及格人數
-
+	
 
 //練習
 //用*號打印出金字塔
-
+	for i:=1;i<=3;i++{
+		for j :=1; j <=3;j++{
+			fmt.Printf("*")
+		}
+	fmt.Println("")
+	}
 
 //練習
 //打印出空心金字塔，外圍用*號包圍
+	fmt.Println("請輸入空心金字塔層數：")
+	fmt.Scanln(&a)
+	for i :=1;i<=2*a+1;i++{
+		fmt.Print("*")
+	}
+	for i :=1;i<=a;i++{
+		for j :=1;j<=a-i+1;j++{
+			fmt.Print("*")
+		}
+		for k:=1;k<=2*i-1;k++{
+			fmt.Print(" ")
+		}
+		for j :=1;j<=a-i+1;j++{
+			fmt.Print("*")
+		}
+	fmt.Println("")
+	}
+	for i:=i;i<=2*a+1;i++{
+		fmt.Print("*")
+	}
 
 
 //打印出九九乘法表
+	for i :=1; i <=9; i++{
+		for j :=1;j<=9;j++{
+			fmt.Println("%v*%v=%v\t",j,i,i*j)
+		}
+	fmt.Printf("\n")
+	}
 
 
 //隨機產生兩個數 當和大於100則跳出
 
 
+
+
 //實現判斷一個整數屬於哪個範圍 >0,<0,=0
+	fmt.Println("輸入一個整數判斷範圍")
+	fmt.Scanln(&a)
+	if a >0 {
+		fmt.Println("正數")
+	}else if a < 0{
+		fmt.Println("負數")
+	}else if a == 0 {
+		fmt.Println("零")
+	}
 
 
 //判斷一個年份是否為閏年
+	fmt.Println("請輸入一個年份判斷是否為閏年")
+	fmt.Scanln(&a)
+	if a % 4 = 0{
+		fmt.Println("是閏年")
+	} else {
+		fmt.Println("不是閏年")
+	}
 
 
 //判斷一個整數是否為水仙花數
 // 153 = 100*1+10*5+1*3
 // 153 = 1*1*1+5*5*5+3*3*3
+	fmt.Println("輸入一個數判斷是否為水仙花數")
+	fmt.Scanln(&a)
+	h = a/100
+	i=(a-100*h)/10
+	j=(a-100*h-i*10)/1
+	if 100*h+10*i+j=a && h*h*h+i*i*i+j*j*j=a{
+		fmt.Printf("%v是水仙花數",a)
+	}else {
+		fmt.Printf("%v不是水仙花數",a)
+	}
 
 
 //寫出輸出結果
@@ -236,17 +307,48 @@ a,b
 	      }
 	   }
 	   */
+	fmt.Println("B")
 
 
-
-//保存用戶名和密碼，判斷用戶是否為張三，密碼是否為1234，如果是則提示登入成功，不是則提示登入失敗
-
+//保存用戶名和密碼，判斷用戶是否為張三，密碼是否為1234，如果是則提示登入成功，不是則提示登入失敗，只有三次機會
+	for i:=1; i<=3; i++{
+	fmt.Println("請輸入用戶名：")
+	fmt.Scanln(&str)
+	fmt.Println("請輸入密碼：")
+	fmt.Scanln(&a)
+		if str == "張三"{
+			if a == 1234{
+				fmt.Println("登入成功")
+				break
+			} else if a != 1234{
+				fmt.Printf("登入失敗，你還有%v次機會\n",3-i)
+			}
+		}else if str != "張三"{
+			if a == 1234{
+				fmt.Printf("當戎失敗，你還有%v次機會\n",3-i)
+			} else if a != 1234{
+				fmt.Printf("登入失敗，你還有%v次機會\n",3-i)
+			}
+		}
+	}
 
 
 //請輸入一個月份，判斷出當月有幾天（switch）
-
+	fmt.Println("請輸入月份")
+	fmt.Scanln(&a)
+	switch {
+		case 1,3,5,7,8,10,12:
+		fmt.Println("有31天")
+		case 4,6,9,11:
+		fmt.Println("有30天")
+		case 2
+		fmt.Pirntln("有28天")
+	}
+	
+	
 
 //開發一款軟件，根據提示(身高-108)*2=體重，可以有10公斤的浮動，觀察體重是否合適
+
 
 
 //輸入一個成績，判斷區間，90-100優秀，80-89優良，70-79良好，60-69及格，60以下不及格
